@@ -1,0 +1,90 @@
+/* ===== Variabel warna: ubah di sini untuk mengganti tema ===== */
+:root {
+  --tinta: #20323a;   /* warna teks dan navbar */
+  --hijau: #2f7d5b;   /* pemasukan */
+  --merah: #b4452f;   /* pengeluaran dan tombol hapus */
+  --tosca: #2a9d8f;   /* aksen utama dan tombol simpan */
+  --latar: #eef3f1;   /* warna latar halaman */
+}
+
+/* ===== Tampilan dasar halaman ===== */
+body {
+  background-color: var(--latar);
+  color: var(--tinta);
+  font-family: "Trebuchet MS", "Segoe UI", sans-serif;
+}
+
+/* ===== Navbar ===== */
+.bg-uang {
+  background-color: var(--tinta);
+}
+
+/* Font berserif untuk judul dan angka agar terlihat menonjol */
+.navbar-brand,
+.kartu h2,
+.angka {
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+/* Tanggal di navbar */
+.navbar-text {
+  color: #bfe3dc;
+}
+
+/* ===== Kartu (form, ringkasan, tabel) ===== */
+.kartu {
+  border: 0;
+  border-radius: 12px;
+  box-shadow: 0 4px 14px rgba(32, 50, 58, 0.1);
+}
+
+/* Garis aksen di sisi kiri kartu pemasukan, pengeluaran, dan saldo */
+.ringkasan {
+  border-left: 5px solid var(--tosca);
+}
+
+/* Angka nominal pada kartu ringkasan */
+.angka {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+/* Warna nominal: hijau untuk pemasukan, merah untuk pengeluaran */
+.teks-masuk {
+  color: var(--hijau);
+}
+
+.teks-keluar {
+  color: var(--merah);
+}
+
+/* ===== Tombol Simpan catatan ===== */
+.btn-utama {
+  background-color: var(--tosca);
+  color: #fff;
+  padding: 0.6rem;
+}
+
+.btn-utama:hover {
+  background-color: #21807a;
+  color: #fff;
+}
+
+/* ===== Tabel riwayat ===== */
+.table thead th {
+  color: #5b6b73;
+}
+
+/* ===== Tombol Hapus di tiap baris tabel ===== */
+.btn-hapus {
+  border: 1px solid var(--merah);
+  color: var(--merah);
+  padding: 0.15rem 0.6rem;
+  font-size: 0.85rem;
+}
+
+/* Saat di-hover, tombol terisi penuh warna merah */
+.btn-hapus:hover {
+  background-color: var(--merah);
+  color: #fff;
+}
